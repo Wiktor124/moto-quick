@@ -1,0 +1,38 @@
+.loading-map {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100vw;
+}
+
+
+@keyframes loader {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+.loader::after,
+.loader::before {
+  animation: loader 2s linear infinite;
+  content: '';
+  border: 2px solid white;
+  width: 68px;
+  height: 68px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.loader::after {
+  opacity: 0;
+  animation-delay: 1s;
+}

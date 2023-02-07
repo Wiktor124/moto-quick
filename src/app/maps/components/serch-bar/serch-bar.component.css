@@ -1,0 +1,9 @@
+.search-container {
+  background-color: white;
+  left: 20px;
+  padding: 0.3125em 0.625em;
+  position: fixed;
+  top: 20px;
+  width: 250px;
+
+}
