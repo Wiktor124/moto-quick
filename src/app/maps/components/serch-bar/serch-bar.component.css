@@ -4,6 +4,6 @@
   padding: 0.3125em 0.625em;
   position: fixed;
   top: 20px;
-  width: 250px;
+  max-width: 250px;
 
 }

@@ -65,19 +65,21 @@ export class MapService {
     newMarkers.forEach(marker => bounds.extend(marker.getLngLat()))
     bounds.extend(userLocation)
 
-    
-    
-    this.map.fitBounds(bounds, {
-      padding: 200
+
+    this.map?.fitBounds(bounds, {
+      padding: 100
     })
 
   }
 
   getRouteBetweenPoints (start: [number, number], end: [number, number]) {
+    
     this.directionsApi.get<DirectionsResponse>(`/${start.join(',')};${end.join(',')}`)
     .subscribe(resp => this.drawPolyLine( resp.routes[0] ))
   }
 
+  
+  
   private drawPolyLine(route: Route) {
     console.log({kms: route.distance / 1000, duration: route.duration / 60});
 
@@ -91,7 +93,7 @@ export class MapService {
     })
 
     this.map?.fitBounds( bounds, {
-      padding: 200
+      padding: 100
     })
 
     const sourceData : AnySourceData = {
@@ -127,7 +129,7 @@ export class MapService {
         'line-join': 'round',
       },
       paint: {
-        "line-color": 'black',
+        "line-color": 'blue',
         "line-width": 3
       }
     })
