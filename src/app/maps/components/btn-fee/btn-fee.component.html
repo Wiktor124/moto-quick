@@ -1,0 +1,43 @@
+<button type="button"
+[ngClass]="{'button__active': buttonActive}" 
+ (click)="toggleActiveClass()"
+ class="button">
+  <div></div>
+  <div></div>
+  <div></div>
+</button>
+
+<div 
+  [ngClass]="{'fee__active': feeActive}"
+  class="fee-container" 
+  >
+  <form 
+    #form
+    [ariaDisabled]=""
+    (submit)="submitForm($event, form, text.value)"
+    >
+    <input
+      type="number"
+      #text
+      [disabled]="!isButtonAddEnabled" 
+      class="form-control"
+      placeholder="Tarifa"
+      required
+    >
+    <div class="fee-buttons">
+      <button 
+        type="submit"
+        [disabled]="!isButtonAddEnabled" 
+        class="btn "
+        >Agregar</button>
+      <button 
+        type="button" 
+        [disabled]="isButtonAddEnabled"
+        (click)="toggleButtonEnable()"
+        class="btn "
+        >Editar</button>
+    </div>
+  </form>
+
+  <h2 >{{ fee }} ₡</h2>
+</div>

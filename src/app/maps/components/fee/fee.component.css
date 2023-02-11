@@ -1,0 +1,13 @@
+.kms {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  font-weight: bolder;
+  padding: 10px;
+  background-color: white;
+  color: green;
+  border-radius: 12px;
+}
+h2 {
+  font-size: 25px;
+}

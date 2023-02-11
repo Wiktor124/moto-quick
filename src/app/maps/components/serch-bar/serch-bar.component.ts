@@ -11,7 +11,7 @@ export class SerchBarComponent {
 
   constructor(private placesService: PlacesService) { }
 
-  onQueryChanged(query: string = 'Costa Rica' + ''){
+  onQueryChanged(query: string = ''){
     if (this.debounceTimer) clearTimeout(this.debounceTimer);
 
     this.debounceTimer = setTimeout(() => {

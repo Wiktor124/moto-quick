@@ -6,6 +6,8 @@ import {HttpClientModule} from '@angular/common/http'
 import { AppComponent } from './app.component';
 import { MapsModule } from './maps/maps.module';
 
+import { FormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -13,7 +15,8 @@ import { MapsModule } from './maps/maps.module';
   imports: [
     BrowserModule,
     MapsModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
