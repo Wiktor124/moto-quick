@@ -22,6 +22,6 @@ export class FeeComponent implements OnInit {
       this.fee = Math.round(this.number * data);
       this.kms = data;
     })
-    console.log('Fee', this.fee);
+    // console.log('Fee', this.fee);
   }
 }
