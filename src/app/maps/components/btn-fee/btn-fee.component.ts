@@ -33,7 +33,7 @@ export class BtnFeeComponent {
     event.preventDefault();
     this.toggleButtonEnable()
     localStorage.setItem('moto-quick-fee', text);
-    this.getNewFee()
+    // this.getNewFee()
     // console.log(localStorage.getItem('moto-quick-fee'));
 
     form.reset();
