@@ -1,0 +1,69 @@
+.button {
+  display: flex;
+  flex-direction: column;
+  width: 3rem;
+  height: 3rem;
+  border: 0;
+  background: transparent;
+  gap: .65rem;
+  top: 20px;
+  height: fit-content;
+  position: fixed;
+  right: 20px;
+  width: 50px;
+  
+}
+
+.button > div {
+  background-color: #000;
+  height: 3.5px;
+  width: 100%;
+  border: 5px;
+  transition: all .5s;
+  transform-origin: left;
+}
+
+.button__active >div {
+  background-color: red;
+}
+
+.button__active div:first-child {
+  transform: rotate(45deg);
+}
+
+.button__active div:nth-child(2) {
+  opacity: 0;
+}
+
+.button__active div:last-child {
+  transform: rotate(-45deg);
+}
+
+.fee-container {
+  position: fixed;
+  top: 80px;
+  right: 0;
+  transition: all 1s;
+  padding: 10px;
+  background-color: white;
+  border-radius: 8px 0 0 8px;
+}
+
+.fee__active {
+  display: none;
+}
+
+.fee-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+.btn {
+  background-color: red;
+  color: white;
+  display: inline-block;
+}
+
+h2 {
+  font-size: 40px;
+}

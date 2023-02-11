@@ -7,6 +7,8 @@ import { BtnMyLocationComponent } from './components/btn-my-location/btn-my-loca
 import { MyLogoComponent } from './components/my-logo/my-logo.component';
 import { SerchBarComponent } from './components/serch-bar/serch-bar.component';
 import { SerchResultsComponent } from './components/serch-results/serch-results.component';
+import { FeeComponent } from './components/fee/fee.component';
+import { BtnFeeComponent } from './components/btn-fee/btn-fee.component';
 
 
 
@@ -18,7 +20,9 @@ import { SerchResultsComponent } from './components/serch-results/serch-results.
     BtnMyLocationComponent,
     MyLogoComponent,
     SerchBarComponent,
-    SerchResultsComponent
+    SerchResultsComponent,
+    FeeComponent,
+    BtnFeeComponent,
   ],
   imports: [
     CommonModule
