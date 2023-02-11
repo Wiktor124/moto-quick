@@ -5,3 +5,9 @@
 p {
   font-size: 12px;
 }
+
+ul {
+  overflow: auto;
+  touch-action: pan-y;
+  max-height: 73vh;
+}
